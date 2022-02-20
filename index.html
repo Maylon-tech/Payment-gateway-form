@@ -9,87 +9,216 @@
 </head>
 <body>
     
-    <form action="">
+        <!--   PRIMEIRO FORMULÁRIO GATEWAY   -->
 
-        <legend>Formulário</legend>
 
-        <main class="container">
+    <div class="container">
 
-            <section class="billing">
+        <form action="">
 
-                <label for="nome">Full Name:
-                    <input type="text" name="nome" id="nome" placeholder="Digite seu Nome">
-                </label>
+            <div class="row">
 
-                <label for="email">E-mail:
-                    <input type="email" name="email" id="email" placeholder="Digite seu E-mail">
-                </label>
+                <div class="col">
 
-                <label for="Address">Address:
-                    <input type="text" name="address" id="address" placeholder="Endereço">
-                </label>
+                    <h3 class="title">Billing Address</h3>
 
-                <label for="city">City:
-                    <input type="text">
-                </label>
+                    <div class="inputBox">
+                       
 
-                <div class="blocks">
+                        <span>Nome Completo:</span>
+                        <input type="text" name="nome" placeholder="Zé da Silva">
 
-                    <label for="state">State:
-                        <input type="text" name="state" id="state" placeholder="Estado">
-                    </label>
+                    </div>
 
-                    <label for="zip-code">Zip Code: 
-                        <input type="number" name="number" id="zip-code" placeholder="Zip">          
-                    </label>
+                    <div class="inputBox">                        
+
+                        <span>E-mail:</span>
+                        <input type="email" name="email" placeholder="exemple@outlook.com">
+
+                    </div>
+
+                    <div class="inputBox">                        
+
+                        <span>Endereço:</span>
+                        <input type="text" name="endereco" placeholder="n apt rua - bairro">
+
+                    </div>
+
+                    <div class="inputBox">                       
+
+                        <span>Cidade:</span>
+                        <input type="text" name="cidade" placeholder="Colorado">
+
+                    </div>
+
+                    <div class="flex">
+
+                        <div class="inputBox">                       
+
+                            <span>Estado:</span>
+                            <input type="text" name="estado" placeholder="Paraná">
+
+                        </div>
+
+                        <div class="inputBox">                       
+
+                            <span>Codigo Postal:</span>
+                            <input type="number" name="" placeholder="8890-9800">
+
+                        </div>
+
+                    </div>
 
                 </div>
 
-            </section>
+                <div class="col">
 
-            <section class="payment">
+                    <h3 class="title">PAYMENT</h3>
 
-            <div class="card-icon">
+                    <div class="inputBox">                       
 
-                <span>Accepted Cards:</span>
-                <img src="" alt="cards">
+                        <span>Tipos de Cartões:</span>
+                        <img src="img/card_img.png" alt="Cards">
+
+                    </div>
+
+                    <div class="inputBox">                       
+
+                        <span>Nome do Cartão:</span>
+                        <input type="text" name="nome" placeholder="Taro da Silva">
+
+                    </div>
+
+                    <div class="inputBox">                        
+
+                        <span>Número do Cartão de Crédito:</span>
+                        <input type="number" name="numero" placeholder="4576-2356-8976">
+
+                    </div>
+
+                    <div class="inputBox">                        
+
+                        <span>Mês da Expiração:</span>
+                        <input type="text" name="data" placeholder="Abril">
+
+                    </div>
+                    
+                    <div class="flex">
+
+                        <div class="inputBox">                       
+
+                            <span>Ano da Expiração:</span>
+                            <input type="number" name="data" placeholder="2022">
+
+                        </div>
+
+                        <div class="inputBox">                       
+
+                            <span>CVV:</span>
+                            <input type="number" name="numero" placeholder="9800">
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 
-                <label for="card-name">Name of Card:
-                    <input type="text" name="card-name" id="card-name" placeholder="Nome do Cartão">
-                </label>
+            <input type="submit" value=" Proceder com a Compra" class="submit-btn">
+        </form>
 
-                <label for="name-card">Name of Card:
-                    <input type="text" name="name-card" id="name-card" placeholder="Dono do Cartão">
-                </label>
+    </div>
 
-                <label for="numero-cartao">Credit Card Number:
-                    <input type="number" name="numero-cartao" id="numero-cartao" placeholder="Numero do Cartão">
-                </label>
-                
-                <label for="exp">Exp. Month
-                    <input type="date" name="exp" id="exp" placeholder="Mês da validade">
-                </label>
 
-                <div class="more-blocks">
+    <!--    SEGUNDO FORMULÁRIO GATEWAY  -->
 
-                    <label for="exp-year">Exp. Year:
-                        <input type="datetime" name="exp-year" id="exp-year" placeholder="Ano da Validade">
+    <section class="container-02">
+
+        <form action="">
+
+            <main class="">
+
+                <section class="billing">
+
+                    <label for="nome">Full Name:
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu Nome">
                     </label>
 
-                    <label for="cvv">CVV: 
-                        <input type="datetime" name="CVV-number" id="cvv" placeholder="CVV numero">          
+                    <label for="email">E-mail:
+                        <input type="email" name="email" id="email" placeholder="Digite seu E-mail">
                     </label>
 
-                </div>           
+                    <label for="Address">Address:
+                        <input type="text" name="address" id="address" placeholder="Endereço">
+                    </label>
 
-            </section>
+                    <label for="city">City:
+                        <input type="text">
+                    </label>
 
-        </main>
+                    <div class="blocks">
 
-        <button class="botao">Proceed to Checkout</button>
+                        <label for="state">State:
+                            <input type="text" name="state" id="state" placeholder="Estado">
+                        </label>
 
-    </form>
+                        <label for="zip-code">Zip Code: 
+                            <input type="number" name="number" id="zip-code" placeholder="Zip">          
+                        </label>
+
+                    </div>
+
+                </section>
+
+                <section class="payment">
+
+                <div class="card-icon">
+
+                    <span>Accepted Cards:</span>
+                    <img src="" alt="cards">
+
+                </div>
+
+                    <label for="card-name">Name of Card:
+                        <input type="text" name="card-name" id="card-name" placeholder="Nome do Cartão">
+                    </label>
+
+                    <label for="name-card">Name of Card:
+                        <input type="text" name="name-card" id="name-card" placeholder="Dono do Cartão">
+                    </label>
+
+                    <label for="numero-cartao">Credit Card Number:
+                        <input type="number" name="numero-cartao" id="numero-cartao" placeholder="Numero do Cartão">
+                    </label>
+                    
+                    <label for="exp">Exp. Month
+                        <input type="date" name="exp" id="exp" placeholder="Mês da validade">
+                    </label>
+
+                    <div class="more-blocks">
+
+                        <label for="exp-year">Exp. Year:
+                            <input type="datetime" name="exp-year" id="exp-year" placeholder="Ano da Validade">
+                        </label>
+
+                        <label for="cvv">CVV: 
+                            <input type="datetime" name="CVV-number" id="cvv" placeholder="CVV numero">          
+                        </label>
+
+                    </div>           
+
+                </section>
+
+            </main>
+
+            <button class="botao">Proceed to Checkout</button>
+
+        </form>
+
+    </section>
+    <!--
+    
+    -->
 </body>
 </html>
